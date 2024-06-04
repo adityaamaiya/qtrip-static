@@ -49,15 +49,32 @@ footer {
 /* ================================== */
 
 .tile {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  height: 450px; /* Adjust height as needed */
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
+  
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
 }
 .tile img {
   /* TODO: MODULE_CARDS */
+  
+  height: 100%;
+  object-fit: cover;
+  transition: transform .2s;
   /* 1. Fill in the required properties. */
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
+  filter: brightness(0.5);
+  transform: scale(1.1);
+  
   /* 1. Fill in the required properties. */
 }
 
@@ -68,6 +85,8 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
+  text-align: center;
 }
 
 .hero-image {
@@ -75,6 +94,7 @@ footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: #f1f1f1;
   height: 60vh;
 
