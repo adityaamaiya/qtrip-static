@@ -72,21 +72,31 @@ footer {
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #f1f1f1;
+  height: 60vh;
+
+ 
+  
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
 }
+.hero-heading{
+  text-align: center;
+}
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+  text-align: center;
 }
 .hero-input {
   width: 80%;
-  height: 50px;
+  height: 70px;
   padding: 16px;
   border-radius: 8px;
   border: none;
@@ -94,6 +104,18 @@ footer {
 
 .nav-link {
   margin-right: 36px;
+}
+.card-custom {
+  height: 400px; /* Adjust height as needed */
+  position: relative;
+  cursor: pointer;
+}
+.card-custom img {
+  height: 100%;
+  object-fit: cover;
+}
+.card-custom .card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* ================================== */
@@ -135,6 +157,8 @@ footer {
   margin-left: 16px;
   padding: 0;
 }
+
+
 
 @media only screen and (min-width: 768px) {
   /* For desktops phones: */
