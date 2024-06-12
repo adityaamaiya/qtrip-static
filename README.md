@@ -1,4 +1,3 @@
-#QTrip Static
 Welcome to QTrip! 
 Explore the world
 
